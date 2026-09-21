@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
 const LINKS = [
+  { label: "Home", to: "/" },
   { label: "Services", to: "/services" },
   { label: "Solutions", to: "/solutions" },
   { label: "Projects", to: "/projects" },
@@ -55,6 +56,7 @@ export function Navbar() {
             <NavLink
               key={link.to}
               to={link.to}
+              end
               className={({ isActive }) =>
                 cn(
                   "group relative py-2 font-mono text-[12px] uppercase tracking-[0.1em] transition-colors hover:text-primary",
@@ -107,6 +109,7 @@ export function Navbar() {
                 <NavLink
                   key={link.to}
                   to={link.to}
+                  end
                   onClick={() => setMenuOpen(false)}
                   className={({ isActive }) =>
                     cn(
