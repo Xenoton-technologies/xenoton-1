@@ -41,8 +41,8 @@ export function Beliefs() {
                 className="rounded-lg border border-border bg-card p-7"
               >
                 <Icon className="h-6 w-6 text-primary" strokeWidth={1.5} />
-                <h3 className="mt-5 text-base font-semibold text-foreground">{belief.title}</h3>
-                <p className="mt-2 text-sm leading-[1.7] text-muted-foreground">{belief.description}</p>
+                <h3 className="mt-5 text-lg font-semibold text-foreground">{belief.title}</h3>
+                <p className="mt-2 text-[15px] leading-[1.7] text-muted-foreground">{belief.description}</p>
               </motion.div>
             )
           })}

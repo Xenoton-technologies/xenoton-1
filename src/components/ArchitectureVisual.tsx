@@ -21,7 +21,7 @@ export function ArchitectureVisual() {
           y1="0"
           x2="0"
           y2="100%"
-          stroke="hsl(190 95% 52% / 0.35)"
+          stroke="hsl(222 84% 48% / 0.35)"
           strokeWidth="1.5"
           strokeDasharray="4 6"
           className="animate-[dash_2.4s_linear_infinite]"
@@ -47,7 +47,7 @@ export function ArchitectureVisual() {
                 <div className="font-mono-label text-primary/90">{node.label}</div>
                 <div className="mt-0.5 text-[13px] text-muted-foreground">{node.meta}</div>
               </div>
-              <span className="absolute right-4 top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-primary/70 shadow-[0_0_8px_2px_hsl(190_95%_52%/0.5)]" />
+              <span className="absolute right-4 top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-primary/70 shadow-[0_0_8px_2px_hsl(222_84%_48%/0.45)]" />
             </div>
           </motion.div>
         )

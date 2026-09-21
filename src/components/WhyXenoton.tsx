@@ -1,6 +1,8 @@
 import { ArrowRight } from "lucide-react"
 import { motion } from "motion/react"
 import { Reveal } from "@/components/Reveal"
+import { Eyebrow } from "@/components/Eyebrow"
+import { AnimatedHeading } from "@/components/AnimatedHeading"
 
 const ITEMS = [
   {
@@ -33,10 +35,13 @@ export function WhyXenoton() {
     <section id="why-xenoton" className="relative border-t border-border py-24">
       <div className="mx-auto max-w-[1240px] px-6 md:px-10 lg:px-16">
         <Reveal className="max-w-2xl">
-          <p className="font-mono-label mb-6 text-primary">03 / WHY XENOTON</p>
-          <h2 className="text-balance font-sans text-[clamp(30px,4vw,48px)] font-semibold tracking-[-0.025em] text-foreground">
+          <Eyebrow>03 / WHY XENOTON</Eyebrow>
+          <AnimatedHeading
+            as="h2"
+            className="text-balance font-sans text-[clamp(34px,4.5vw,58px)] font-bold tracking-[-0.03em] text-foreground"
+          >
             Built Around Your Business
-          </h2>
+          </AnimatedHeading>
         </Reveal>
 
         <div className="mt-14 flex flex-col">

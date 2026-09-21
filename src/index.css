@@ -1,32 +1,34 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: hsl(222 25% 7%);
-  --color-foreground: hsl(210 20% 96%);
+  --color-background: hsl(210 22% 98%);
+  --color-foreground: hsl(220 30% 14%);
 
-  --color-primary: hsl(190 95% 52%);
-  --color-primary-foreground: hsl(222 30% 7%);
+  --color-primary: hsl(222 84% 48%);
+  --color-primary-foreground: hsl(0 0% 100%);
 
-  --color-secondary: hsl(220 20% 14%);
-  --color-secondary-foreground: hsl(210 20% 96%);
+  --color-secondary: hsl(210 26% 95%);
+  --color-secondary-foreground: hsl(220 30% 14%);
 
-  --color-muted: hsl(220 18% 12%);
-  --color-muted-foreground: hsl(215 12% 62%);
+  --color-muted: hsl(210 24% 96%);
+  --color-muted-foreground: hsl(220 8% 46%);
 
-  --color-card: hsl(222 22% 10%);
-  --color-card-elevated: hsl(222 20% 13%);
+  --color-card: hsl(210 26% 95%);
+  --color-card-elevated: hsl(0 0% 100%);
 
-  --color-border: hsl(220 18% 20%);
-  --color-input: hsl(220 18% 20%);
-  --color-ring: hsl(190 95% 52%);
+  --color-border: hsl(212 18% 89%);
+  --color-input: hsl(212 18% 89%);
+  --color-ring: hsl(222 84% 48%);
 
-  --color-accent: hsl(175 85% 48%);
-  --color-accent-foreground: hsl(222 30% 7%);
+  --color-accent: hsl(222 84% 40%);
+  --color-accent-foreground: hsl(0 0% 100%);
 
-  --color-success: hsl(145 65% 50%);
-  --color-destructive: hsl(4 78% 58%);
+  --color-success: hsl(150 58% 40%);
+  --color-warning: hsl(32 90% 52%);
+  --color-destructive: hsl(0 72% 51%);
 
-  --font-sans: "Barlow", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
 
   --container-page: 1240px;
@@ -34,6 +36,7 @@
   --animate-pulse-slow: pulse-slow 4s ease-in-out infinite;
   --animate-marquee: marquee 32s linear infinite;
   --animate-dash: dash 2.4s linear infinite;
+  --animate-shimmer: shimmer 5s ease-in-out infinite;
 
   @keyframes pulse-slow {
     0%,
@@ -59,6 +62,15 @@
       stroke-dashoffset: -24;
     }
   }
+  @keyframes shimmer {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
 }
 
 @layer base {
@@ -68,18 +80,20 @@
 
   html {
     scroll-behavior: smooth;
+    color-scheme: light;
   }
 
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
-    font-family: var(--font-sans);
+    font-family: var(--font-body);
+    font-weight: 400;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
 
   ::selection {
-    background: hsl(190 95% 52% / 0.25);
+    background: hsl(222 84% 48% / 0.18);
     color: var(--color-foreground);
   }
 
@@ -94,15 +108,17 @@
   h3,
   h4 {
     font-family: var(--font-sans);
-    letter-spacing: -0.025em;
+    font-weight: 700;
+    letter-spacing: -0.03em;
   }
 }
 
 @layer utilities {
   .font-mono-label {
-    font-family: var(--font-mono);
+    font-family: var(--font-body);
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.16em;
     font-size: 11px;
   }
 
@@ -111,24 +127,26 @@
   }
 
   .bg-grid {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+    background-image: linear-gradient(rgba(20, 80, 224, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(20, 80, 224, 0.05) 1px, transparent 1px);
     background-size: 48px 48px;
   }
 
   .bg-glow-primary {
-    background: radial-gradient(circle at 70% 20%, hsl(190 95% 52% / 0.14), transparent 40%);
+    background: radial-gradient(circle at 70% 20%, hsl(222 84% 48% / 0.08), transparent 40%);
   }
 
   .bg-glow-secondary {
-    background: radial-gradient(circle at 20% 80%, hsl(175 85% 48% / 0.1), transparent 40%);
+    background: radial-gradient(circle at 20% 80%, hsl(222 84% 40% / 0.06), transparent 40%);
   }
 
   .text-gradient {
-    background: linear-gradient(90deg, hsl(190 95% 60%), hsl(175 85% 55%));
+    background: linear-gradient(90deg, hsl(222 84% 48%), hsl(214 90% 58%), hsl(228 76% 33%), hsl(222 84% 48%));
+    background-size: 300% 100%;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    animation: var(--animate-shimmer);
   }
 }
 

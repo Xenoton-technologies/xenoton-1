@@ -2,6 +2,8 @@ import { motion } from "motion/react"
 import { Code2, Database, Cloud, Smartphone } from "lucide-react"
 import { Reveal } from "@/components/Reveal"
 import { TechGrid } from "@/components/TechGrid"
+import { Eyebrow } from "@/components/Eyebrow"
+import { AnimatedHeading } from "@/components/AnimatedHeading"
 
 const NODES = [
   { icon: Code2, label: "Frontend" },
@@ -16,11 +18,14 @@ export function Intro() {
       <TechGrid glow={false} />
       <div className="relative mx-auto grid max-w-[1240px] grid-cols-1 gap-16 px-6 md:px-10 lg:grid-cols-2 lg:px-16">
         <Reveal>
-          <p className="font-mono-label mb-6 text-primary">WHAT WE DO</p>
-          <h2 className="text-balance font-sans text-[clamp(30px,4vw,48px)] font-semibold tracking-[-0.025em] text-foreground">
+          <Eyebrow>WHAT WE DO</Eyebrow>
+          <AnimatedHeading
+            as="h2"
+            className="text-balance font-sans text-[clamp(34px,4.5vw,58px)] font-bold tracking-[-0.03em] text-foreground"
+          >
             Turning Ideas Into Digital Solutions
-          </h2>
-          <p className="mt-6 max-w-lg text-base leading-[1.7] text-muted-foreground">
+          </AnimatedHeading>
+          <p className="mt-6 max-w-lg text-lg leading-[1.7] text-muted-foreground">
             Technology should solve real business challenges.
           </p>
           <p className="mt-4 max-w-lg text-base leading-[1.7] text-muted-foreground">
@@ -51,8 +56,8 @@ export function Intro() {
               })}
             </div>
             <svg className="pointer-events-none absolute inset-0 h-full w-full" aria-hidden="true">
-              <line x1="50%" y1="0" x2="50%" y2="100%" stroke="hsl(220 18% 20%)" strokeWidth="1" />
-              <line x1="0" y1="50%" x2="100%" y2="50%" stroke="hsl(220 18% 20%)" strokeWidth="1" />
+              <line x1="50%" y1="0" x2="50%" y2="100%" stroke="hsl(212 18% 89%)" strokeWidth="1" />
+              <line x1="0" y1="50%" x2="100%" y2="50%" stroke="hsl(212 18% 89%)" strokeWidth="1" />
             </svg>
           </div>
         </Reveal>

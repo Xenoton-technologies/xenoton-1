@@ -1,16 +1,21 @@
 import { motion } from "motion/react"
 import { Reveal } from "@/components/Reveal"
+import { Eyebrow } from "@/components/Eyebrow"
+import { AnimatedHeading } from "@/components/AnimatedHeading"
 
 export function About() {
   return (
     <section id="about" className="relative border-t border-border py-24">
       <div className="mx-auto grid max-w-[1240px] grid-cols-1 gap-16 px-6 md:px-10 lg:grid-cols-2 lg:px-16">
         <Reveal>
-          <p className="font-mono-label mb-6 text-primary">06 / ABOUT XENOTON</p>
-          <h2 className="text-balance font-sans text-[clamp(30px,4vw,48px)] font-semibold tracking-[-0.025em] text-foreground">
+          <Eyebrow>06 / ABOUT XENOTON</Eyebrow>
+          <AnimatedHeading
+            as="h2"
+            className="text-balance font-sans text-[clamp(34px,4.5vw,58px)] font-bold tracking-[-0.03em] text-foreground"
+          >
             Building Digital Solutions for a Connected World
-          </h2>
-          <p className="mt-6 max-w-xl text-base leading-[1.7] text-muted-foreground">
+          </AnimatedHeading>
+          <p className="mt-6 max-w-xl text-lg leading-[1.7] text-muted-foreground">
             Xenoton Technologies is a software and technology solutions company
             focused on helping businesses build, improve, and scale their digital
             presence.

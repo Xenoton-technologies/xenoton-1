@@ -1,5 +1,7 @@
 import { Reveal } from "@/components/Reveal"
 import { ProjectCard } from "@/components/ProjectCard"
+import { Eyebrow } from "@/components/Eyebrow"
+import { AnimatedHeading } from "@/components/AnimatedHeading"
 
 const PROJECTS = [
   {
@@ -18,11 +20,14 @@ export function Projects() {
     <section id="projects" className="relative border-t border-border py-24">
       <div className="mx-auto max-w-[1240px] px-6 md:px-10 lg:px-16">
         <Reveal className="max-w-2xl">
-          <p className="font-mono-label mb-6 text-primary">05 / SELECTED WORK</p>
-          <h2 className="text-balance font-sans text-[clamp(30px,4vw,48px)] font-semibold tracking-[-0.025em] text-foreground">
+          <Eyebrow>05 / SELECTED WORK</Eyebrow>
+          <AnimatedHeading
+            as="h2"
+            className="text-balance font-sans text-[clamp(34px,4.5vw,58px)] font-bold tracking-[-0.03em] text-foreground"
+          >
             Ideas Into Working Products
-          </h2>
-          <p className="mt-6 text-base leading-[1.7] text-muted-foreground">
+          </AnimatedHeading>
+          <p className="mt-6 text-lg leading-[1.7] text-muted-foreground">
             Our projects focus on solving practical business challenges through
             modern technology, thoughtful design, and scalable development.
           </p>

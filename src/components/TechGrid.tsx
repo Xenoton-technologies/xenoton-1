@@ -25,7 +25,7 @@ export function TechGrid({ className, glow = true }: TechGridProps) {
               left: point.left,
               width: point.size,
               height: point.size,
-              background: "radial-gradient(circle, hsl(190 95% 52% / 0.10), transparent 70%)",
+              background: "radial-gradient(circle, hsl(222 84% 48% / 0.07), transparent 70%)",
               animationDelay: point.delay,
             }}
           />

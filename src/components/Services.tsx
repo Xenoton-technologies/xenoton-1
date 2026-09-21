@@ -10,6 +10,8 @@ import {
 } from "lucide-react"
 import { Reveal } from "@/components/Reveal"
 import { ServiceCard } from "@/components/ServiceCard"
+import { Eyebrow } from "@/components/Eyebrow"
+import { AnimatedHeading } from "@/components/AnimatedHeading"
 
 const SERVICES = [
   {
@@ -97,11 +99,14 @@ export function Services() {
     <section id="services" className="relative border-t border-border py-24">
       <div className="mx-auto max-w-[1240px] px-6 md:px-10 lg:px-16">
         <Reveal className="max-w-2xl">
-          <p className="font-mono-label mb-6 text-primary">01 / SERVICES</p>
-          <h2 className="text-balance font-sans text-[clamp(30px,4vw,48px)] font-semibold tracking-[-0.025em] text-foreground">
+          <Eyebrow>01 / SERVICES</Eyebrow>
+          <AnimatedHeading
+            as="h2"
+            className="text-balance font-sans text-[clamp(34px,4.5vw,58px)] font-bold tracking-[-0.03em] text-foreground"
+          >
             Technology Solutions Designed Around Your Business
-          </h2>
-          <p className="mt-6 text-base leading-[1.7] text-muted-foreground">
+          </AnimatedHeading>
+          <p className="mt-6 text-lg leading-[1.7] text-muted-foreground">
             We provide end-to-end software development and digital technology
             services to help businesses transform ideas into reliable digital
             products.

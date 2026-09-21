@@ -1,6 +1,8 @@
 import { Mail, MapPin, Phone } from "lucide-react"
 import { Reveal } from "@/components/Reveal"
 import { ContactForm } from "@/components/ContactForm"
+import { Eyebrow } from "@/components/Eyebrow"
+import { AnimatedHeading } from "@/components/AnimatedHeading"
 
 const DETAILS = [
   {
@@ -27,11 +29,14 @@ export function Contact() {
     <section id="contact" className="relative border-t border-border py-24">
       <div className="mx-auto max-w-[1240px] px-6 md:px-10 lg:px-16">
         <Reveal className="max-w-2xl">
-          <p className="font-mono-label mb-6 text-primary">07 / CONTACT</p>
-          <h2 className="text-balance font-sans text-[clamp(30px,4vw,48px)] font-semibold tracking-[-0.025em] text-foreground">
+          <Eyebrow>07 / CONTACT</Eyebrow>
+          <AnimatedHeading
+            as="h2"
+            className="text-balance font-sans text-[clamp(34px,4.5vw,58px)] font-bold tracking-[-0.03em] text-foreground"
+          >
             Let's Build Something Together
-          </h2>
-          <p className="mt-6 text-base leading-[1.7] text-muted-foreground">
+          </AnimatedHeading>
+          <p className="mt-6 text-lg leading-[1.7] text-muted-foreground">
             Have an Idea or Project in Mind? Whether you need a new website, a
             custom software solution, a web application, or support for an
             existing product, we'd love to understand your requirements.

@@ -1,5 +1,7 @@
 import { motion } from "motion/react"
 import { Reveal } from "@/components/Reveal"
+import { Eyebrow } from "@/components/Eyebrow"
+import { AnimatedHeading } from "@/components/AnimatedHeading"
 
 const STEPS = [
   { title: "Discover", description: "We understand your business, requirements, users, and objectives." },
@@ -15,10 +17,13 @@ export function Process() {
     <section className="relative border-t border-border py-24">
       <div className="mx-auto max-w-[1240px] px-6 md:px-10 lg:px-16">
         <Reveal className="max-w-2xl">
-          <p className="font-mono-label mb-6 text-primary">04 / PROCESS</p>
-          <h2 className="text-balance font-sans text-[clamp(30px,4vw,48px)] font-semibold tracking-[-0.025em] text-foreground">
+          <Eyebrow>04 / PROCESS</Eyebrow>
+          <AnimatedHeading
+            as="h2"
+            className="text-balance font-sans text-[clamp(34px,4.5vw,58px)] font-bold tracking-[-0.03em] text-foreground"
+          >
             From Concept to Launch
-          </h2>
+          </AnimatedHeading>
         </Reveal>
 
         <div className="relative mt-16">

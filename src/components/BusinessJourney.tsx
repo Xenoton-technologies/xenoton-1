@@ -1,5 +1,6 @@
 import { motion } from "motion/react"
 import { Reveal } from "@/components/Reveal"
+import { AnimatedHeading } from "@/components/AnimatedHeading"
 
 const STAGES = ["Business Need", "Discovery", "Solution", "Design", "Engineering", "Testing", "Deployment", "Growth"]
 
@@ -8,9 +9,12 @@ export function BusinessJourney() {
     <section className="relative overflow-hidden border-t border-border py-24">
       <div className="mx-auto max-w-[1240px] px-6 md:px-10 lg:px-16">
         <Reveal className="mx-auto max-w-2xl text-center">
-          <h2 className="text-balance font-sans text-[clamp(26px,3.4vw,40px)] font-semibold tracking-[-0.02em] text-foreground">
+          <AnimatedHeading
+            as="h2"
+            className="text-balance font-sans text-[clamp(28px,3.8vw,46px)] font-bold tracking-[-0.025em] text-foreground"
+          >
             Every Project Starts With Understanding The Problem.
-          </h2>
+          </AnimatedHeading>
         </Reveal>
 
         <div className="relative mx-auto mt-16 flex max-w-3xl flex-col items-center">
@@ -20,7 +24,7 @@ export function BusinessJourney() {
               y1="0"
               x2="0"
               y2="100%"
-              stroke="hsl(190 95% 52% / 0.4)"
+              stroke="hsl(222 84% 48% / 0.4)"
               strokeWidth="1.5"
               strokeDasharray="4 6"
               initial={{ pathLength: 0 }}
