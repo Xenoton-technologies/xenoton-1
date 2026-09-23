@@ -16,3 +16,4 @@ export interface ContactSubmissionResult {
 
 export function ensureTableExists(): Promise<void>
 export function saveContactSubmission(data: ContactSubmissionData): Promise<ContactSubmissionResult>
+
