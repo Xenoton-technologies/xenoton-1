@@ -1,43 +1,34 @@
-import { saveContactSubmission } from '../../server/db.js'
-
-export const handler = async (event) => {
-  const headers = {
-    'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
-    'Access-Control-Allow-Headers': 'Content-Type',
-    'Content-Type': 'application/json',
-  }
-
-  if (event.httpMethod === 'OPTIONS') {
-    return {
-      statusCode: 204,
-      headers,
-      body: '',
-    }
-  }
-
-  if (event.httpMethod !== 'POST') {
+export async function handler(event) {
+  if (event.httpMethod !== "POST") {
     return {
       statusCode: 405,
-      headers,
-      body: JSON.stringify({ success: false, error: 'Method Not Allowed' }),
-    }
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ success: false, error: "Method not allowed" }),
+    };
   }
 
   try {
-    const payload = JSON.parse(event.body || '{}')
-    const record = await saveContactSubmission(payload)
+    const data = JSON.parse(event.body || "{}");
+    const { name, email, projectType, message } = data;
+
+    if (!name?.trim() || !email?.trim() || !projectType?.trim() || !message?.trim()) {
+      return {
+        statusCode: 400,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ success: false, error: "Please fill in all required fields." }),
+      };
+    }
+
     return {
       statusCode: 200,
-      headers,
-      body: JSON.stringify({ success: true, data: record }),
-    }
-  } catch (err) {
-    console.error('Contact submission error:', err?.message || err)
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ success: true }),
+    };
+  } catch {
     return {
       statusCode: 400,
-      headers,
-      body: JSON.stringify({ success: false, error: err?.message || 'Failed to submit' }),
-    }
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ success: false, error: "Invalid request payload." }),
+    };
   }
 }
