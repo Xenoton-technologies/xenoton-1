@@ -101,7 +101,7 @@ export const NAV_LINKS = [
   { label: "Services", to: "/services" },
   { label: "Solutions", to: "/solutions" },
   { label: "Products", to: "/products" },
-  { label: "Projects", to: "/projects" },
+  { label: "Our Work", to: "/work" },
   { label: "About", to: "/about" },
   { label: "Contact", to: "/contact" },
 ];
@@ -129,7 +129,7 @@ export const FOOTER_COMPANY = [
   { label: "Products", to: "/products" },
   { label: "AI Chatbot", to: "/products/ai-chatbot" },
   { label: "HMS", to: "/products/hms" },
-  { label: "Projects", to: "/projects" },
+  { label: "Our Work", to: "/work" },
   { label: "Contact", to: "/contact" },
   { label: "Privacy Policy", to: "/privacy" },
   { label: "Terms", to: "/terms" },

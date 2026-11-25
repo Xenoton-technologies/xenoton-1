@@ -25,6 +25,7 @@ export function App() {
           <Route path="products" element={<ProductsPage />} />
           <Route path="products/ai-chatbot" element={<AiChatbotPage />} />
           <Route path="products/hms" element={<HmsPage />} />
+          <Route path="work" element={<ProjectsPage />} />
           <Route path="projects" element={<ProjectsPage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="contact" element={<ContactPage />} />
