@@ -91,7 +91,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
 ];
 
 export const CONTACT_INFO = {
-  email: "xenotontechnologies@gmail.com",
+  email: "business@xenotontechnologies.com",
   phone: "+91 9384116088",
   phoneHref: "tel:+919384116088",
 };
@@ -100,9 +100,15 @@ export const NAV_LINKS = [
   { label: "Home", to: "/" },
   { label: "Services", to: "/services" },
   { label: "Solutions", to: "/solutions" },
+  { label: "Products", to: "/products" },
   { label: "Projects", to: "/projects" },
   { label: "About", to: "/about" },
   { label: "Contact", to: "/contact" },
+];
+
+export const PRODUCT_LINKS = [
+  { label: "AI Chatbot", to: "/products/ai-chatbot", subtitle: "Hybrid AI + Live Agent Support" },
+  { label: "HMS", to: "/products/hms", subtitle: "Hospital & Pharmacy Platform" },
 ];
 
 export const FOOTER_SERVICES = [
@@ -120,6 +126,9 @@ export const FOOTER_COMPANY = [
   { label: "About", to: "/about" },
   { label: "Services", to: "/services" },
   { label: "Solutions", to: "/solutions" },
+  { label: "Products", to: "/products" },
+  { label: "AI Chatbot", to: "/products/ai-chatbot" },
+  { label: "HMS", to: "/products/hms" },
   { label: "Projects", to: "/projects" },
   { label: "Contact", to: "/contact" },
   { label: "Privacy Policy", to: "/privacy" },

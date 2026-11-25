@@ -7,8 +7,8 @@ const CONTACT_CARDS = [
   {
     icon: Mail,
     label: "EMAIL",
-    value: "xenotontechnologies@gmail.com",
-    href: "mailto:xenotontechnologies@gmail.com",
+    value: "business@xenotontechnologies.com",
+    href: "mailto:business@xenotontechnologies.com",
   },
   {
     icon: Phone,

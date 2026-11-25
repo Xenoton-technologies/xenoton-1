@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" fill="none">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5956f0"/>
+      <stop offset="100%" stop-color="#ff50b8"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7f7fb"/>
+      <stop offset="100%" stop-color="#eef0f8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <!-- Left: Live Agent Inbox Window -->
+  <rect x="44" y="48" width="700" height="654" rx="22" fill="#ffffff" stroke="#e4e4ee" stroke-width="2"/>
+  <rect x="44" y="48" width="700" height="64" rx="22" fill="#141422"/>
+  <rect x="44" y="90" width="700" height="22" fill="#141422"/>
+  <circle cx="80" cy="80" r="7" fill="#f350bc"/>
+  <rect x="104" y="74" width="140" height="12" rx="6" fill="#ffffff" fill-opacity="0.9"/>
+  <rect x="610" y="68" width="108" height="24" rx="12" fill="url(#grad)"/>
+  <text x="664" y="84" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="700">LIVE INBOX</text>
+  <!-- Sidebar threads -->
+  <rect x="44" y="112" width="210" height="590" fill="#f9f9fd"/>
+  <line x1="254" y1="112" x2="254" y2="702" stroke="#ececf4" stroke-width="1.5"/>
+  <rect x="62" y="136" width="174" height="74" rx="12" fill="#ffffff" stroke="#6d55e9" stroke-width="1.5"/>
+  <circle cx="88" cy="164" r="12" fill="#6d55e9" fill-opacity="0.16"/>
+  <rect x="110" y="156" width="96" height="10" rx="5" fill="#141422"/>
+  <rect x="110" y="176" width="110" height="8" rx="4" fill="#8b90a0"/>
+  <rect x="62" y="226" width="174" height="68" rx="12" fill="#ffffff" stroke="#ececf4"/>
+  <circle cx="88" cy="254" r="12" fill="#f350bc" fill-opacity="0.16"/>
+  <rect x="110" y="246" width="84" height="10" rx="5" fill="#2d3142"/>
+  <rect x="110" y="266" width="102" height="8" rx="4" fill="#9ea3b2"/>
+  <rect x="62" y="308" width="174" height="68" rx="12" fill="#ffffff" stroke="#ececf4"/>
+  <circle cx="88" cy="336" r="12" fill="#2ba166" fill-opacity="0.16"/>
+  <rect x="110" y="328" width="92" height="10" rx="5" fill="#2d3142"/>
+  <rect x="110" y="348" width="96" height="8" rx="4" fill="#9ea3b2"/>
+  <!-- Chat transcript -->
+  <rect x="282" y="140" width="270" height="56" rx="16" fill="#f2f4f8"/>
+  <rect x="300" y="158" width="210" height="9" rx="4.5" fill="#323646"/>
+  <rect x="300" y="174" width="140" height="8" rx="4" fill="#7c8294"/>
+  <rect x="394" y="216" width="320" height="68" rx="16" fill="url(#grad)"/>
+  <rect x="414" y="236" width="260" height="9" rx="4.5" fill="#ffffff"/>
+  <rect x="414" y="254" width="190" height="8" rx="4" fill="#ffffff" fill-opacity="0.8"/>
+  <rect x="282" y="306" width="290" height="56" rx="16" fill="#f2f4f8"/>
+  <rect x="300" y="324" width="240" height="9" rx="4.5" fill="#323646"/>
+  <rect x="300" y="340" width="170" height="8" rx="4" fill="#7c8294"/>
+  <!-- AI Copilot Card -->
+  <rect x="282" y="392" width="432" height="132" rx="16" fill="#f6f4ff" stroke="#6d55e9" stroke-opacity="0.4" stroke-width="1.5"/>
+  <rect x="304" y="412" width="136" height="22" rx="11" fill="#6d55e9"/>
+  <text x="372" y="427" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="10" font-weight="700">AI COPILOT DRAFT</text>
+  <rect x="304" y="448" width="380" height="10" rx="5" fill="#2d2950" fill-opacity="0.8"/>
+  <rect x="304" y="468" width="340" height="10" rx="5" fill="#2d2950" fill-opacity="0.55"/>
+  <rect x="304" y="490" width="110" height="22" rx="11" fill="#ffffff" stroke="#6d55e9"/>
+  <text x="359" y="505" text-anchor="middle" fill="#6d55e9" font-family="sans-serif" font-size="10" font-weight="700">USE REPLY</text>
+  <!-- Input bar -->
+  <rect x="282" y="624" width="432" height="52" rx="26" fill="#f5f6fa" stroke="#e2e4ef"/>
+  <rect x="306" y="646" width="180" height="8" rx="4" fill="#9ea3b2"/>
+  <circle cx="688" cy="650" r="18" fill="url(#grad)"/>
+  <!-- Right: Floating Website Widget -->
+  <rect x="790" y="130" width="366" height="572" rx="28" fill="#ffffff" stroke="#e2e4ef" stroke-width="2"/>
+  <rect x="790" y="130" width="366" height="104" rx="28" fill="url(#grad)"/>
+  <rect x="790" y="196" width="366" height="38" fill="url(#grad)"/>
+  <circle cx="836" cy="182" r="20" fill="#ffffff" fill-opacity="0.22"/>
+  <rect x="870" y="168" width="144" height="13" rx="6.5" fill="#ffffff"/>
+  <rect x="870" y="190" width="100" height="9" rx="4.5" fill="#ffffff" fill-opacity="0.8"/>
+  <rect x="816" y="262" width="248" height="62" rx="16" fill="#f4f5fa"/>
+  <rect x="834" y="280" width="196" height="9" rx="4.5" fill="#222536"/>
+  <rect x="834" y="298" width="148" height="8" rx="4" fill="#6c7285"/>
+  <rect x="892" y="346" width="238" height="52" rx="16" fill="#6d55e9"/>
+  <rect x="912" y="366" width="186" height="9" rx="4.5" fill="#ffffff"/>
+  <rect x="816" y="420" width="268" height="74" rx="16" fill="#f4f5fa"/>
+  <rect x="834" y="440" width="224" height="9" rx="4.5" fill="#222536"/>
+  <rect x="834" y="458" width="180" height="8" rx="4" fill="#6c7285"/>
+  <rect x="834" y="474" width="110" height="8" rx="4" fill="#6c7285"/>
+  <rect x="816" y="624" width="314" height="52" rx="26" fill="#f5f6fa" stroke="#e2e4ef"/>
+  <circle cx="1102" cy="650" r="18" fill="url(#grad)"/>
+</svg>

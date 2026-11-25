@@ -176,7 +176,7 @@ export function TermsPage() {
           body: (
             <p>
               Questions about these terms can be sent to{" "}
-              <a href="mailto:xenotontechnologies@gmail.com">xenotontechnologies@gmail.com</a> or{" "}
+              <a href="mailto:business@xenotontechnologies.com">business@xenotontechnologies.com</a> or{" "}
               <a href="tel:+919384116088">+91 9384116088</a>.
             </p>
           ),
@@ -289,7 +289,7 @@ export function PrivacyPage() {
           body: (
             <p>
               For any privacy-related questions or requests, contact us at{" "}
-              <a href="mailto:xenotontechnologies@gmail.com">xenotontechnologies@gmail.com</a> or{" "}
+              <a href="mailto:business@xenotontechnologies.com">business@xenotontechnologies.com</a> or{" "}
               <a href="tel:+919384116088">+91 9384116088</a>.
             </p>
           ),
